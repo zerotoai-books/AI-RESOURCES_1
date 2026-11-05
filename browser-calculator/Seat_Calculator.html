@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Practice seat calculator</title>
+<style>
+body {font: 18px sans-serif; max-width: 32rem;
+      margin: 2rem auto; padding: 1rem;}
+label, input, button {display: block; margin: .7rem 0;}
+input, button {font: inherit; padding: .4rem;}
+</style>
+<h1>Practice seat calculator</h1>
+<p>This calculator does not reserve places.</p>
+<form id="form" novalidate>
+<label for="capacity">Capacity</label>
+<input id="capacity" inputmode="numeric" value="12">
+<label for="confirmed">Confirmed places</label>
+<input id="confirmed" inputmode="numeric" value="8">
+<button type="submit">Calculate</button>
+<button type="reset">Reset</button>
+</form>
+<p id="result" role="status" aria-live="polite"></p>
+<script>
+const form = document.getElementById('form');
+const result = document.getElementById('result');
+function whole(text) {
+  if (!/^[0-9]+$/.test(text.trim())) {
+    throw Error('Whole numbers only');
+  }
+  const value = Number(text.trim());
+  if (!Number.isSafeInteger(value)) throw Error('Count too large');
+  return value;
+}
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  try {
+    const capacity = whole(document.getElementById('capacity').value);
+    const count = whole(document.getElementById('confirmed').value);
+    if (capacity <= 0 || count > capacity) {
+      throw Error('Use positive capacity covering confirmed places');
+    }
+    result.textContent = 'Available places: ' + (capacity - count);
+  } catch (error) {
+    result.textContent = 'Check inputs: ' + error.message;
+  }
+});
+form.addEventListener('reset', () => {result.textContent = '';});
+</script>
+</html>

@@ -1,0 +1,44 @@
+FROM ZERO TO AI GITHUB UPLOAD STEPS
+
+Use From_Zero_to_AI_GitHub_Upload_Pack.zip for this upload. It replaces the earlier incomplete starter. This package is a companion preview; it is not the book manuscript or a final publishing approval.
+
+1. DOWNLOAD AND EXTRACT
+Download the ZIP from this chat. On Windows right-click it and choose Extract All. Open the extracted folder. You will see UPLOAD_TO_GITHUB and this instruction file. Upload only the CONTENTS of UPLOAD_TO_GITHUB. Do not upload the outer ZIP, the enclosing folder, your manuscript or the review evidence.
+
+2. CREATE THE REPOSITORY
+Go to https://github.com and sign in. Click the + menu near the top right, then New repository. Use the name from-zero-to-ai-2027-resources. Select Public for the free public reader page. Add a README to initialize the repository, then click Create repository. This exposes the companion practice files to readers; the full book is excluded from this package.
+
+3. UPLOAD THE FILES
+In the repository click Add file then Upload files. Open the extracted UPLOAD_TO_GITHUB folder on your computer. Select every file and folder INSIDE it and drag them into GitHub's upload area. You should see index.html at the repository root, together with assets, browser-calculator, downloads and workbooks. Do not drag UPLOAD_TO_GITHUB itself: that would add an unwanted extra folder level. This web upload is under the current 100-file and 25 MiB-per-file browser limits.
+
+4. SAVE THE UPLOAD
+Type Add 2027 Book 1 companion resources as the commit message. Choose Commit directly to main if offered, then Commit changes. If GitHub instead offers a new branch and Propose changes, create the pull request and merge it into main before continuing. On your repository's Code tab, verify that index.html is beside README.md, not inside another folder.
+
+5. SWITCH ON THE READER PAGE
+Click Settings in your repository. In the left menu click Pages. Under Build and deployment, set Source to Deploy from a branch. Select main and /(root). Click Save. Use /(root), not /docs: this upload package puts index.html at the root.
+
+6. OPEN THE ACTUAL WEBSITE
+Remain on Settings then Pages and refresh until GitHub shows the published address or a Visit site button. Deployment can take a few minutes. If it fails, check the repository Actions tab for the Pages build. Copy the actual address GitHub supplies. The expected pattern is https://YOUR-USERNAME.github.io/from-zero-to-ai-2027-resources/ but YOUR-USERNAME must be your real GitHub username. The address is not live until GitHub publishes it.
+
+7. TEST AS A READER
+Open that published address in a private or incognito browser window. Check Chapter 1, choose another tool, use a Copy button, download a chapter ZIP, download all resources and open each workbook. Open the downloaded seat calculator locally. Public readers should not have to sign in to GitHub. AI services and paid features are separate.
+
+8. ADD THE LINK TO THE BOOK
+Only after those checks, replace [ADD VERIFIED READER RESOURCE ADDRESS BEFORE PRINTING] in the Word manuscript with the real page address. Print the address clearly. A QR code can point to that same address. Scan it from a printed proof before publication.
+
+9. UPDATE LATER
+Rebuild matching download ZIPs whenever resources change. Update the page and all-resources ZIP together. Record changes in CORRECTIONS.md and change the companion version. Keep the 2027 edition address stable. Do not replace it with unrelated later editions.
+
+WHAT READERS GET
+A chapter menu, copyable prompt and source blocks, worked references, individual chapter downloads, an all-resources ZIP, three Excel workbooks, Python reference code, a local calculator, original exercise figures and voice scripts. This is practice material; generated video/audio and audiobook narration are not included.
+
+COMMON FIXES
+404 page: check Settings > Pages, main, /(root), and confirm index.html is at repository root.
+Missing files: upload the downloads, workbooks, assets and browser-calculator folders as well as index.html.
+An extra UPLOAD_TO_GITHUB folder appears on GitHub: re-upload its contents at the repository root.
+Copy button blocked locally: select the text and copy manually; hosted HTTPS pages normally allow the clipboard route.
+Excel protected view: inspect and open a working copy using your normal trusted-file process; the workbooks contain no macros or external connections.
+
+OFFICIAL GITHUB GUIDES CHECKED 26 OCTOBER 2026
+https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
